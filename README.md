@@ -11,8 +11,6 @@
 
 - [CPCFI's web-page](#cpcfis-web-page)
     - [CPCFI Page](#cpcfi-page)
-  - [Jamboard : https://jamboard.google.com/d/1lQRf\_GdMP8vkUtWzrQr6nmXYrHVM9WrN8Y0sjkkfB\_0/edit?usp=sharing](#jamboard--httpsjamboardgooglecomd1lqrf_gdmp8vkutwzrqr6nmxyrhvm9wrn8y0sjkkfb_0edituspsharing)
-    - [Developers:](#developers)
   - [Secciones](#secciones)
   - [Tecnologías usadas:](#tecnologías-usadas)
   - [Estructura de carpetas](#estructura-de-carpetas)
