@@ -1,0 +1,39 @@
+$base-color-light : #0B0B0B;
+
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #040404;
+    font-family: 'Noto Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+h1,h2,h3 {
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+

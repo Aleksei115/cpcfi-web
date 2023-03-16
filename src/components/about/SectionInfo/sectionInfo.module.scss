@@ -1,0 +1,135 @@
+
+  
+.card-container {
+    height: 100%;
+    // aspect-ratio: calc(2.35/1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #000000d5;
+    backdrop-filter: blur(0.5px);
+    // filter: blur(0.6px);
+    z-index: -1;
+}
+  
+.background-filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #000000d5;
+    backdrop-filter: blur(0.5px);
+    
+}
+
+.data-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    flex: 1 1;
+    top: 60px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    z-index: 1;
+}
+
+.image {
+    width: 100%;
+    // height: 100%;
+    object-fit:contain;
+}
+
+
+.title {
+    // margin-top: 8.5rem;
+    font-size: 2.9em;
+    color: #FD9926;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 82px;
+    text-align: center;
+    align-self: flex-start;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 50%;
+        height: 2px;
+        position: relative;
+        background-color: #FE8124;
+        bottom: 4px;
+        left: 25%;
+        margin: 0;
+    }
+}
+
+.text-container {
+
+    width:100%; 
+    display:flex; 
+    flex-direction: column;
+    justify-content:center; 
+    align-items:center; 
+    margin-bottom:100px;
+    padding-top:20px;
+
+    .text {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        font-size: 1.4em;
+        line-height: 1.3em;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 300;
+        color: #FFFFFF;
+
+
+    }
+
+}    
+
+@media (max-width: 769px) {
+
+    .title{
+        font-size: 3em;
+    }
+
+    .text-container{
+        .text {
+            font-size: 1.2em;
+        }
+    }
+
+}
+
+@media (max-width: 376px) {
+
+    .title{
+        font-size: 2em;
+    }
+
+    .text-container{
+        .text {
+            font-size: 1em;
+        }
+    }
+
+}
+

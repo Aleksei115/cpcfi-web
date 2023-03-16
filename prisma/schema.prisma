@@ -1,0 +1,73 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db { 
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Aux tables
+
+model testimonie_aux {
+  id             Int    @id @default(autoincrement())
+  name           String  @db.VarChar(25) @unique
+  description    String  @db.VarChar(600)
+  testimonie_img String? 
+  generation_id  Int     @db.Integer
+  active         Boolean @db.Boolean
+}
+
+
+// Tables 
+
+model prospect_sponsor {
+  id     Int      @id @default(autoincrement())
+  email  String   @db.VarChar(100) @unique
+  date   DateTime @default(now())
+  active Boolean  @default(true)
+}
+
+// model athlete {
+//   id                  String        @id @default(uuid())
+//   username            String        @unique @db.VarChar(8)
+//   password            String        @unique @db.VarChar(8)
+//   birth_day           DateTime      @default(now())
+//   github_username     String        @unique @db.VarChar(20)
+//   codeforces_username String        @unique @db.VarChar(20)
+//   instagram_username  String?       @unique @db.VarChar(20)
+//   facebook_username   String?       @unique @db.VarChar(20)
+//   athlete_img         Bytes?        @db.ByteA
+//   generationId       generation    @relation(fields: [generation_id], references: [id])
+//   generation_id        String
+//   public_key_cf       String?       @db.VarChar(150)
+//   private_key_cf      String?       @db.VarChar(150)
+//   names               String        @db.VarChar(50)
+//   last_names          String        @db.VarChar(50)
+//   email               String        @db.VarChar(100)
+//   problems_tried      Int?
+//   problems_solved     Int?
+//   roleId             role?         @relation(fields: [role_id], references: [id])
+//   role_id              String?
+//   contest_teamId     contest_team? @relation(fields: [contest_team_id], references: [id])
+//   contest_team_id      String?
+//   active              Boolean       @default(true)
+// }
+
+// model contest_team {
+//   id      String    @id @default(uuid())
+//   name    String    @db.VarChar(100)
+//   athlete athlete[]
+// }
+
+// model role {
+//   id          String    @id @default(uuid())
+//   name        String    @db.VarChar(100)
+//   description String    @db.VarChar(100)
+//   athlete     athlete[]
+// }
+
+// model generation {
+//   id      String    @id @default(uuid())
+//   athlete athlete[]
+// }

@@ -1,0 +1,39 @@
+.slideshow {
+    width: 48vw;
+    margin: auto;
+    aspect-ratio: calc(4/3);
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #0f0c29;;
+}
+
+
+.prevButton {
+    padding: 5px;
+    position: absolute;
+    background-color: #0f0c29;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.nextButton {
+    padding: 5px;
+    position: absolute;
+    background-color: #0f0c29;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

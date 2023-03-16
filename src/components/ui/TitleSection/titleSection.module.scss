@@ -1,0 +1,19 @@
+.title-sponsors {
+    color: #FFF;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    position: relative;
+    z-index: -2;
+    text-transform: uppercase;
+
+    &::after {
+        content: '';
+        width: 140%;
+        height: 100%;
+        background-color: #323232;
+        position: absolute;
+        left: -20%; top: +50%;
+        z-index: -3;
+    }
+}

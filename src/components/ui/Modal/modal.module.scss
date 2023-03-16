@@ -1,0 +1,131 @@
+
+.brackdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+
+}
+
+.exit {
+    justify-self: flex-end;
+    align-self: flex-start;
+    grid-area: exit;
+}
+
+      
+.title {
+    text-align: center;
+    grid-area: title;
+}
+
+
+.modal-container-text {
+    width: 100%;
+    height: fit-content;
+    align-self: flex-start;
+    display: grid;
+    grid-template-areas: 
+    "info info info";
+    align-items: center;
+    justify-items: center;
+    grid-area: container-text;
+}
+
+.modal-container-text-img{
+    grid-template-areas: 
+    "image image image"
+    "info info info" !important;
+}
+
+
+.modal {
+    position: relative;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "exit exit exit"
+    "title title title"
+    "container-text container-text container-text";
+    align-items: center;
+    justify-items: center;
+    width: 80%;
+    max-width: 600px;
+    height: fit-content;
+    max-height: 350px;
+    background-color: #1E1E1E;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 35%;
+    border-radius: 20px;
+    padding: 30px;
+
+    &::after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: inherit;
+        border-radius: inherit;
+    }
+    &:before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(-202deg, rgba(251,172,42,.6) -10%, rgba(255,63,36,.3) 100% );
+        transform: translate3d(0px, 5px, 0) scale(1);
+        border-radius: 20px;
+        filter: blur(20px);
+        opacity: var(0.7);
+        transition: opacity 0.3s;
+        border-radius: inherit;
+    }
+}
+
+.image {
+    grid-area: image;
+}
+
+.text {
+    
+    font-family: 'Noto Sans', sans-serif;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-style: oblique;
+    font-size: 1rem;
+    // line-height: 20px;
+    text-align: justify;
+    // align-self: center;
+    margin-bottom: 0;
+    grid-area: info;
+    // overflow-y: scroll;
+
+
+}
+
+@media (max-width: 768px){
+    .modal-container-text {
+        width: 100%;
+        height: 80%;
+        // position: relative;
+        max-height: 150px;
+        overflow-y: scroll;
+    }
+
+    .text {
+        font-size: 0.8rem;
+        word-break: break-all;
+    }
+}

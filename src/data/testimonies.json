@@ -1,0 +1,41 @@
+{
+
+    "data":[
+        {
+            "id": 1,
+            "name": "Vicky",
+            "description": "El haber sido parte del club fue una de las mejores decisiones de los últimos años a nivel académico y personal, no solo porque pude obtener y reafirmar conocimiento de varias materias, sino que me permitió mejorar mis habilidades de expresión oral y comprender un poco mejor cómo se debe de trabajar en equipo. Pero más allá de la parte teórica y práctica del club el trato tan amable y atento de los maestros y compañeros hicieron que las clases se volvieran más agradables y divertidas.",
+            "photo" : "https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "generation": 1
+        },
+        {
+            "id": 2,
+            "name": "Fredin",
+            "description": "El club CPCFI fue la manera en que logré impulsar, aún más, mi deseo de aprender programación. Esa curiosidad que te permite incrementar tus habilidades fue despertada gracias al club, siendo un lugar donde puedes conocer personas que comparten tu mismo gusto de programar, tal que todos están comprometidos en apoyarse y seguir avanzando para obtener la mejor versión de sí mismas.",
+            "photo" : "https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "generation": 1
+        },
+        {
+            "id": 3,
+            "name": "Bryan",
+            "description": "El club me ha sido de gran ayuda para mí, me ha enseñado la importancia de la perseverancia y el trabajo en equipo, mis habilidades como programador han mejorado bastante desde que inicie en el club y me han surgido muy buenas oportunidades como desarrollador.",
+            "photo" : "https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "generation": 1
+        },
+        {
+            "id": 4,
+            "name": "Ricardo",
+            "description": "El club de programación competitiva sin duda alguna ha sido mi mejor experiencia formativa dentro de la facultad de ingeniería. Participar en el club ha orientado y dado impulso a mi carrera profesional y puedo decir que las habilidades de resolución de problemas adquiridas en el club son invaluables, así como las experiencias, oportunidades y amigos que se hicieron en el camino.",
+            "photo" : "https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "generation": 1
+        },
+        {
+            "id": 5,
+            "name": "Diego",
+            "description": "Ser parte del Club ha sido una de las mejores experiencias que he tenido a lo largo de mi vida universitaria. Además de adquirir habilidades para resolver problemas, pude conocer muy buenos amigos que comparten el mismo gusto que yo por el mundo de la programación. También, el club me abrió muchas puertas para conseguir internships en las mejores empresas de tecnología del mundo. ¡En definitiva lo volvería a hacer!",
+            "photo" : "https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "generation": 1
+        }
+        
+    ]
+}

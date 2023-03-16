@@ -1,0 +1,77 @@
+
+.shake {
+    animation: reboting 1s infinite;
+
+}
+
+.clickable {
+    cursor: pointer;
+    &:hover {
+        animation: reboting 2s ease-in-out infinite;
+    }
+}
+
+.small {
+    width: 5em  !important;
+    height: 5em !important;
+}
+
+.medium {
+    width : 7em !important;
+    height: 7em !important;
+}
+
+.large {
+    width : 10.5em !important;
+    height: 10.5em !important;
+}
+
+
+
+
+.container-circle-img-no-boder {
+    &::before {
+        display: none;
+    }
+}
+
+
+
+.container-circle-img {
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+    transition: all 1s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        margin: -2px;
+        border-radius: 50%;
+        z-index: -2;
+        background: linear-gradient(to bottom, #D95F5D, #E28352, #EAB24A);
+    }
+    
+}
+
+
+
+.card-img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+@keyframes reboting {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
+}

@@ -1,0 +1,174 @@
+.container-sponsors {
+    width: 100%;
+    // top: 100px;
+    padding-top: 50px;
+    background-color: #0C0C0C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+
+
+    .container-logos {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: wrap;
+
+        .container-logo-ic {
+            width: 5em ;
+            height: 5em;
+            align-self: center;
+        }
+
+        .container-logo {
+            width: 7em ;
+            height: 7em;
+            align-self: center;
+        }
+        
+        .logo {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    
+        
+    .container-wave {
+        width: 100%;
+        min-height: 30vh;
+        overflow: hidden;
+        position: relative;
+        bottom: 0px;
+        background-color: rgba(255, 104, 37, 0.8);
+        z-index: -1;
+        
+        .container-form-sponsors {
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            padding: 0 20px;
+
+            p {
+                display: flex;
+                align-items: center;
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                text-align: center;
+                margin-bottom: 0;
+            }
+
+            form{
+
+                width: 35%;
+                height: 3em;
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-content: center;
+
+                button {
+                    width: 3.1em;
+                    height: 3.1em;
+                    position: absolute;
+                    bottom: 0;
+                    top: .2em;
+                    right: .3em;
+                    border-radius: 148px;
+                    background-color: #CE5620;
+                    outline: none;
+                    border: none;
+                    .img-button-submit{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    outline: none;
+                    border-radius: 148px;
+                    border-color: transparent;
+                    margin: 0 auto;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 30px;
+                    color: rgba(0, 0, 0, 0.5);;
+                    padding-left: 15px;
+
+                    &::placeholder {
+                        color: rgba(0, 0, 0, 0.2);
+                    }
+                }
+            }
+
+
+        }
+
+
+        .wave {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            line-height: 0;
+            z-index: -2;
+
+            svg {
+                // position: relative;
+                // display: block;
+                width: calc(210% + 1.3px);
+                height: 130px;
+                aspect-ratio: calc(210% + 1.3px)/130px;
+                transform: rotateY(180deg);
+                z-index: -3;
+                overflow: hidden;
+            }
+            
+            .shape-fill {
+                fill: #0C0C0C;
+                z-index: -2;
+            }
+        }
+    }
+
+        
+}
+
+
+
+@media (max-width: 975px){
+
+    .container-wave{
+        height: 40vh !important;
+
+        .container-form-sponsors {
+            form {
+                width: 85% !important;
+            }
+        }
+
+    }
+
+}

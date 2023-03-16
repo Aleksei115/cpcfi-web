@@ -1,0 +1,120 @@
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1 1;
+    position: relative;
+    margin-bottom: 80px;
+    gap: 30px;
+}
+
+.photo-container {
+    width: 75%;
+    aspect-ratio: calc(16/9);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgb(12, 12, 12);
+    border-radius: 15px;
+}
+
+.container-options {
+    width: 40%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+    z-index: 1;
+}
+
+.list {
+    display: flex;
+    flex-wrap:wrap ;
+    width: 100%;
+    height: 98%;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+
+
+
+.list-item {
+    border-radius: 5px 5px 0 0 ;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    position: relative;
+    background: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    position: relative;
+    user-select: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.section-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 0 0 0 10px ;
+}
+
+.selected {
+    // rgba(115, 65, 65, 0.57) rojo 
+    background: #323232;
+}
+
+
+.underline {
+    // #8855ff; morado 
+    //  #FE8124; naranja
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #8855ff;
+}
+
+@media (max-width:768px) {
+
+    .section {
+        height: 100vh;
+        margin-bottom: 0;
+    }
+
+    .photo-container {
+        aspect-ratio: calc(9/16);
+    }
+
+    .list {
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px; 
+        padding: 1px;
+    }
+    .list-item{
+        flex: 0;
+        height: 50px;
+        padding: 10px;
+    }
+    .container-options {
+        height: 56%;
+    }
+}
