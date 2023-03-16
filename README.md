@@ -1,14 +1,8 @@
 # CPCFI's web-page
 
-### [CPCFI Page](https://www.cpcfi.unam.mx/)
 
-## Jamboard : https://jamboard.google.com/d/1lQRf_GdMP8vkUtWzrQr6nmXYrHVM9WrN8Y0sjkkfB_0/edit?usp=sharing
+### [CPCFI Page(Project Complete)](https://www.cpcfi.unam.mx/)
 
-
-### Developers:
-- Aleksei: alekseigarcia47@gmail.com
-- JP: juanpsfi3023@gmail.com
-- Fredin: afred7817@gmail.com
 
 --------------------------------
 
