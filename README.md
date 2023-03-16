@@ -195,13 +195,13 @@ Para poder acceder a la base de datos de desarrollo y tener el mismo esquema que
 
 Una vez instalada estas dos herramientas se deberá acceder a `pgAdmin4`, saldrá una ventana emergente pidiendo la contraseña maestra que antes definimos al instalar `postgreSQL`.
 
-![Clave maestra](https://github.com/cpcfi/web-page/blob/main/imgRepo/postgres1.png)
+![Clave maestra](https://github.com/Aleksei115/cpcfi-web/blob/main/imgRepo/postgres1.png)
 
 Esto nos dará acceso a la aplicación y a la visualización de  nuestros grupos de servidores, por defecto solo existirá un grupo de servidores denominado `Servers`
 
 Dentro de nuestro grupo de servidores llamado `Servers` podremos ver el servidor llamado `PostgreSQL 15` daremos click para acceder a este servidor, por defecto, estaremos ingresando mediante el usuario `postgres`cuya contraseña debimos definir dentro de la instalación de `postgreSQL`.
 
-![Clave maestra](https://github.com/cpcfi/web-page/blob/main/imgRepo/postgres2.png)
+![Clave maestra](https://github.com/Aleksei115/cpcfi-web/blob/main/imgRepo/postgres2.png)
 
 
 
@@ -210,13 +210,13 @@ Al introducir la contraseña accederemos a nuestro servidor que contiene las ***
 
 Lo único que deberemos hacer es dar click derecho sobre el icono **Databases**, ir a la opción create y crear una base de datos.
 
-![Clave maestra](https://github.com/cpcfi/web-page/blob/main/imgRepo/postgres3.png)
+![Clave maestra](https://github.com/Aleksei115/cpcfi-web/blob/main/imgRepo/postgres3.png)
 
 Deberá cumplir con las siguientes características:
 
-![Clave maestra](https://github.com/cpcfi/web-page/blob/main/imgRepo/postgres_db_1.png)
+![Clave maestra](https://github.com/Aleksei115/cpcfi-web/blob/main/imgRepo/postgres_db_1.png)
 
-![Clave maestra](https://github.com/cpcfi/web-page/blob/main/imgRepo/postgres_db_2.png)
+![Clave maestra](https://github.com/Aleksei115/cpcfi-web/blob/main/imgRepo/postgres_db_2.png)
 
 Posterior a que se haya seguido el anterior esquema daremos click en el botón azul ***SAVE***
 
@@ -240,7 +240,7 @@ Por el momento, solo es necesario tener información en nuestra tabla `testimoni
 
 Para ejecutar nuestro script deberemos acceder a `pgAdmin4` y acceder a nuestra base de datos `cpcfi_dev > Schemas > public > Tables` si todo el proceso anterior se realizó de una manera exitosa deberemos poder ver la tabla  `testimonies_aux`, le daremos click derecho y a selecionaremos la opción `Query tool`, despúes de todo este proceso se deberá ver nuestro administrador de la siguiente manera. 
 
-![Clave maestra](https://github.com/cpcfi/web-page/blob/main/imgRepo/postgres_db_3.png)
+![Clave maestra](https://github.com/Aleksei115/cpcfi-web/blob/main/imgRepo/postgres_db_3.png)
 
 Deberemos darle click al botón con icono de *carpeta*, el cual se encuentra en la esquina superior izquierda de nuestra pestaña `Query tool`.
 
@@ -255,7 +255,7 @@ Query returned successfully in 64 msec.
 
 Para poder verificar la información deberemos volver abrir una nueva ventana de `Query tool` mediante el siguiente botón:
 
-![Clave maestra](https://github.com/cpcfi/web-page/blob/main/imgRepo/btn_1.png)
+![Clave maestra](https://github.com/Aleksei115/cpcfi-web/blob/main/imgRepo/btn_1.png)
 
 El cual se encuentra en la parte superior de `pgAdmin 4`
 
